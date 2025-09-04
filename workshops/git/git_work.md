@@ -14,10 +14,10 @@ Many concepts, structure, and exercises were adapted with appreciation.
 - [1. Introduction to Git and Version Control](#1-introduction-to-git-and-version-control)
 - [2. Porcelain and Plumbing](#2-porcelain-and-plumbing)
 - [3. Quick Config (we discuss configuration more in chapter 5)](#3-quick-config-we-discuss-configuration-more-in-chapter-5)
-- [3. Repository](#3-repository)
-- [3. How git works internally](#3-how-git-works-internally)
-- [4. Config](#4-config)
-- [5. Branching](#5-branching)
+- [4. Repository](#4-repository)
+- [5. How git works internally](#5-how-git-works-internally)
+- [6. Config](#6-config)
+- [7. Branching](#7-branching)
 ### 1. Introduction to Git and Version Control
 Git is a powerful Version Control System (VCS) that allows developers to track code changes over
 time, identify who made them, and manipulate or revert history. It is the de facto standard for all
@@ -79,7 +79,7 @@ git config --add --global init.defaultBranch master/main
 We're using master for now because it is Git's default, but later we'll change it to main,
 which is GitHub's default. Just bear with us for a second.
 
-### 3. Repository
+### 4. Repository
 - **Initialization**
 A Git repository represents a single project. It is essentially a directory that contains a
 project's files and a hidden .git directory. The .git directory holds the entire state of your
@@ -211,7 +211,7 @@ number of commits shown, and more importantly, to run it without the interactive
 ```bash
 git --no-pager log -n 10
 ```
-### 3. How git works internally
+### 5. How git works internally
 - **Different Hashes**
 My latest Git commit hash was:
 
@@ -340,7 +340,7 @@ that hash somewhere in your notes.
     For example, C: add history.md and computer.md.
 5. Use the command cat-file to view the hash of the blob for the comics.md file again in the latest
    commit. You should notice that it still has the same hash because the file hasn't changed.
-### 4. Config
+### 6. Config
 - **Git Config**
 Git stores author information so that when you're making a commit it can track who made the
 change. Here's how you might update your global [Git configuration](https://git-scm.com/docs/git-config) (don't do this yet):
@@ -518,7 +518,7 @@ Which is stored in the user's $HOME directory? (Remember that $HOME = ~/)
 - []  local
 - []  global
 
-### 5. Branching
+### 7. Branching
 
 - **What Is a Branch?**
 
